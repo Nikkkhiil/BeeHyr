@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".thankyou_page">
+
+
+
+    <TextView
+    android:id="@id/text2"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="240dp"
+    android:text="हम आपके चेत्रे "
+    android:textSize="29dp"
+    android:textAlignment="center"
+    android:textColor="#0A0A0A">
+</TextView>
+
+    <TextView
+        android:id="@+id/abc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="हम आपके चेत्रे हम आपके चेत्रे "
+        android:textSize="35dp"
+        android:layout_below="@id/text2"
+        android:textAlignment="center"
+        android:textColor="#223286">
+    </TextView>
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="OTP प्राप्त करने के लिए क्लिक करें"
+        android:textSize="20dp"
+        android:id="@+id/otp_b"
+        android:background="#04DAA8"
+        android:textColor="#ffffff"
+        android:layout_below="@id/abc">
+    </Button>
+    <TextView
+        android:id="@+id/abcd"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="हम आपके चेत्रे हम आपके चेत्रे हम आपके चेत्रे हम आपके चेत्रे हम आपके चेत्रे हम आपके चेत्रे"
+        android:textSize="23dp"
+        android:layout_below="@id/otp_b"
+        android:textAlignment="center"
+        android:textColor="#070707">
+    </TextView>
+
+
+</RelativeLayout>
+

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".list_jobs">
+
+
+
+
+
+    <TextView
+        android:id="@+id/abc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:text="पवितरण"
+        android:textSize="27dp"
+
+        android:textAlignment="textStart"
+        android:textColor="#223286">
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/abc">
+
+        <include layout="@layout/card_jobs">
+        </include>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/abctt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_margin="8dp"
+
+        android:text="अपने छेत्र में रौकरियो की तलाश करें"
+        android:textSize="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/ll"
+        android:textAlignment="textStart"
+        android:textColor="#223286">
+    </TextView>
+    <TextView
+        android:id="@+id/abcttt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:text="अपने छेत्र में रौकरियो की तलाश करें "
+        android:textSize="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/abctt"
+        android:textAlignment="textStart"
+        android:textColor="#223286">
+    </TextView>
+
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="170dp"
+        android:text="OTP प्राप्त करने के लिए क्लिक करें"
+        android:textSize="20dp"
+        android:id="@+id/otp_b"
+        android:background="#04DAA8"
+        android:textColor="#ffffff"
+        android:layout_below="@id/abcttt">
+    </Button>
+
+</RelativeLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".welcome">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="21dp"
+        android:text="आपका स्वागत है"
+        android:textColor="#172CA5"
+        android:textSize="30dp"></TextView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="139dp"
+        android:layout_height="126dp"
+        android:layout_below="@+id/welcome"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="30dp"
+        android:lines="5"
+        android:src="@drawable/zomato"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp" />
+
+    <RelativeLayout
+        android:id="@+id/a"
+        android:layout_width="225dp"
+        android:layout_height="147dp"
+        android:layout_alignTop="@+id/profile_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/profile_image">
+
+        <TextView
+            android:id="@+id/a_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="name"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/a_dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a_name"
+            android:layout_marginTop="8dp"
+            android:text="31/8/2021"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/a_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/a_dob"
+            android:layout_marginTop="8dp"
+            android:lines="5"
+            android:text="लखनऊ djsfusafakgskuusdhkjfkc "
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profile_image"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="28dp"
+        android:alpha=".8"
+        android:text="अपना क्षेत्र चुनें"
+        android:textSize="38dp">
+
+    </TextView>
+
+<GridView
+
+    android:layout_below="@+id/select"
+    android:numColumns="auto_fit"
+    android:gravity="center"
+    android:columnWidth="100dp"
+    android:stretchMode="columnWidth"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/grid">
+
+</GridView>
+</RelativeLayout>

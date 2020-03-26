@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".list_jobs">
+
+
+
+
+
+    <TextView
+        android:id="@+id/abc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="प्रश्न 3"
+        android:textSize="22dp"
+
+        android:textAlignment="textStart"
+        android:textColor="#223286">
+    </TextView>
+<RelativeLayout
+    android:id="@+id/ll"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_below="@id/abc">
+
+        <ImageView
+            android:id="@+id/tag"
+            android:layout_width="81dp"
+            android:layout_height="80dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/zomato" />
+        <RelativeLayout
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:layout_toEndOf="@+id/tag"
+            android:layout_toRightOf="@id/tag">
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="पलम्बर"
+
+
+                />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t1"
+                android:layout_marginTop="5dp"
+                android:text="1000/--2000" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/t2"
+                android:layout_marginTop="5dp"
+                android:text="लखनऊ"
+
+                />
+        </RelativeLayout>
+
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/abcd"
+        android:background="#FDE6DE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:text="पहम आपके चेत्रे में रौकरियो की तलाश कर रहे हैं"
+        android:textSize="25dp"
+        android:layout_alignParentBottom="true"
+        android:textAlignment="center"
+        android:textColor="#131313">
+    </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="229dp"
+        android:id="@+id/addhar_c"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="290dp"
+        android:src="@drawable/ic_camera_alt_black_24dp"></ImageView>
+  </RelativeLayout>

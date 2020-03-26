@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".list_jobs">
+
+
+
+
+
+    <TextView
+        android:id="@+id/abc"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="27dp"
+        android:layout_marginTop="50dp"
+        android:text="31 नौकरियां उपलब्ध हैं "
+        android:textSize="32dp"
+
+        android:textAlignment="textStart"
+        android:textColor="#223286">
+    </TextView>
+   <androidx.appcompat.widget.AppCompatSeekBar
+       android:id="@+id/seek"
+       android:layout_width="350dp"
+       android:layout_marginLeft="27dp"
+       android:layout_height="wrap_content"
+
+       android:layout_marginTop="40dp"
+       android:layout_below="@id/abc">
+
+   </androidx.appcompat.widget.AppCompatSeekBar>
+
+    <TextView
+        android:id="@+id/abcd"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seek"
+        android:layout_marginTop="18dp"
+        android:text="खोज का दायरा बढ़ाएं"
+        android:layout_marginLeft="30dp"
+        android:textColor="#070707"
+        android:textSize="27dp"></TextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="609dp"
+        android:layout_below="@+id/abcd"
+        android:layout_marginTop="31dp"
+        android:scrollbars="vertical" />
+
+</RelativeLayout>
+

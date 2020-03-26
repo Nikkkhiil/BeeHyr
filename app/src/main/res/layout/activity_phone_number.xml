@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phone_number">
+
+    <ImageView
+        android:id="@+id/logoid2"
+        android:layout_width="206dp"
+        android:layout_height="149dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <TextView
+        android:id="@id/text2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoid2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/enter_number"
+        android:textColor="#172CA5"
+        android:textSize="40dp"></TextView>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="360dp"
+        android:layout_height="76dp"
+        android:layout_below="@+id/text2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:width="20dp"
+        android:ems="10"
+        android:hint="Enter Number"
+        android:inputType="phone"
+        android:textSize="28dp"></EditText>
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="OTP प्राप्त करने के लिए क्लिक करें"
+        android:textSize="20dp"
+        android:id="@+id/otp_b">
+    </Button>
+</RelativeLayout>
